@@ -1,0 +1,6 @@
+framework module Pods_Products_App_NEW_2 {
+  umbrella header "Pods-Products_App_NEW_2-umbrella.h"
+
+  export *
+  module * { export * }
+}

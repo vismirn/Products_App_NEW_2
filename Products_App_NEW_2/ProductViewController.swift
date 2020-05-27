@@ -9,14 +9,10 @@
 import UIKit
 
 class ProductViewController: UIViewController {
-    @IBOutlet weak var imageProductImage: UIImageView!
-    @IBOutlet weak var nameProductLabel: UILabel!
-    @IBOutlet weak var descriptionProductLabel: UILabel!
-    @IBOutlet weak var costProductLabel: UILabel!
     
     
     let nameProduct = UILabel()
-    let descriptionProduct = UILabel()
+    var descriptionProduct = UILabel()
     let costProduct = UILabel()
     
     
@@ -33,29 +29,41 @@ class ProductViewController: UIViewController {
 //MARK: - Setup View
 extension ProductViewController {
     func setupElements() {
-        view.backgroundColor = .green
-    
+        view.backgroundColor = .white
+        
+        nameProduct.text = "Name"
+        descriptionProduct.text = "Description"
+        costProduct.text = "Cost"
         
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard let destinationVC = segue.destination as? ProductViewController else { return }
+//??        destinationVC.nameProduct = IndexPath
+    }
+    
 }
 //MARK: - Setup Constraints
 
 extension ProductViewController {
     func setupConstraints() {
-
-        nameProduct.translatesAutoresizingMaskIntoConstraints = false
-        descriptionProduct.translatesAutoresizingMaskIntoConstraints = false
-        costProduct.translatesAutoresizingMaskIntoConstraints = false
         
-        view.addSubview(nameProduct)
-        view.addSubview(descriptionProduct)
-        view.addSubview(costProduct)
+        let stackView = UIStackView(arrangedSubviews: [nameProduct, descriptionProduct, costProduct])
+        stackView.axis = .vertical
+        stackView.spacing = 40
+        
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(stackView)
+        
 
         
         NSLayoutConstraint.activate([
-            nameProduct.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
-            nameProduct.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-            nameProduct.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10)
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10)
         ])
         
     }

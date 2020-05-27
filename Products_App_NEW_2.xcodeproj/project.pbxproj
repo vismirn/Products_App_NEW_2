@@ -17,7 +17,6 @@
 		BB918A73247D52D400F760D1 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB918A72247D52D300F760D1 /* ProductCell.xib */; };
 		BB918A77247D530D00F760D1 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB918A76247D530D00F760D1 /* ProductCell.swift */; };
 		BBCF99D0247D5C2F0092039D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBCF99CF247D5C2F0092039D /* Main.storyboard */; };
-		BBCF99D7247D63320092039D /* DetailProduct.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBCF99D6247D63320092039D /* DetailProduct.xib */; };
 		CB063347DF80BA643D2EEABC /* Pods_Products_App_NEW_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68ABD8F6B28303BAC55A098 /* Pods_Products_App_NEW_2.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		BB918A72247D52D300F760D1 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		BB918A76247D530D00F760D1 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		BBCF99CF247D5C2F0092039D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		BBCF99D6247D63320092039D /* DetailProduct.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailProduct.xib; sourceTree = "<group>"; };
 		F68ABD8F6B28303BAC55A098 /* Pods_Products_App_NEW_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Products_App_NEW_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,7 +106,6 @@
 			children = (
 				BB918A76247D530D00F760D1 /* ProductCell.swift */,
 				BB918A72247D52D300F760D1 /* ProductCell.xib */,
-				BBCF99D6247D63320092039D /* DetailProduct.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -194,7 +191,6 @@
 				BB918A73247D52D400F760D1 /* ProductCell.xib in Resources */,
 				BB918A62247D522400F760D1 /* Assets.xcassets in Resources */,
 				BBCF99D0247D5C2F0092039D /* Main.storyboard in Resources */,
-				BBCF99D7247D63320092039D /* DetailProduct.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

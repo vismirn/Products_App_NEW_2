@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="3ze-aS-qGv" customClass="ProductViewController" customModule="Products_App_NEW_2" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="atB-3l-3Ma">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZMA-Gv-AzR">
+                        <rect key="frame" x="27" y="83" width="360" height="204"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="204" id="sWI-R9-RJx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTJ-LV-96U">
+                        <rect key="frame" x="27" y="324" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="jwg-0L-PYn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBq-qc-8rJ">
+                        <rect key="frame" x="27" y="353" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="vmA-s9-4ly"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1n-xt-tlc">
+                        <rect key="frame" x="27" y="382" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <constraints>
+                    <constraint firstItem="F1n-xt-tlc" firstAttribute="height" secondItem="atB-3l-3Ma" secondAttribute="height" multiplier="0.0234375" id="87b-Gz-nOi"/>
+                    <constraint firstItem="VBq-qc-8rJ" firstAttribute="leading" secondItem="llz-rm-SLk" secondAttribute="leading" constant="27" id="9m6-5Z-X2z"/>
+                    <constraint firstItem="PTJ-LV-96U" firstAttribute="leading" secondItem="llz-rm-SLk" secondAttribute="leading" constant="27" id="dNJ-pz-Bx4"/>
+                    <constraint firstItem="F1n-xt-tlc" firstAttribute="leading" secondItem="llz-rm-SLk" secondAttribute="leading" constant="27" id="inD-ax-AOU"/>
+                    <constraint firstItem="PTJ-LV-96U" firstAttribute="top" secondItem="ZMA-Gv-AzR" secondAttribute="bottom" constant="37" id="liY-Ch-xg5"/>
+                    <constraint firstItem="ZMA-Gv-AzR" firstAttribute="leading" secondItem="llz-rm-SLk" secondAttribute="leading" constant="27" id="uH9-CG-V16"/>
+                    <constraint firstItem="ZMA-Gv-AzR" firstAttribute="top" secondItem="llz-rm-SLk" secondAttribute="top" constant="39" id="wmO-BY-bjx"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="llz-rm-SLk"/>
+            </view>
+            <connections>
+                <outlet property="costProductLabel" destination="F1n-xt-tlc" id="Gni-L9-pbi"/>
+                <outlet property="descriptionProductLabel" destination="VBq-qc-8rJ" id="Un1-8N-YJa"/>
+                <outlet property="imageProductImage" destination="ZMA-Gv-AzR" id="80v-Lc-iui"/>
+                <outlet property="nameProductLabel" destination="PTJ-LV-96U" id="Bho-aj-Zkr"/>
+            </connections>
+            <point key="canvasLocation" x="-475" y="-28"/>
+        </viewController>
+    </objects>
+</document>
